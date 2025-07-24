@@ -1,0 +1,21 @@
+ version: '3.9'
+
+ services:
+   db:
+      image: postgres
+      environment:
+        POSTGRES_DB: swy-db
+        POSTGRES_USER: swy
+        POSTGRES_PASSWORD: swy
+   web:
+     build: .
+     command: python manage.py runserver 0.0.0.0:8000
+     volumes:
+       - .:/app
+     ports:
+       - "8001:8000"
+
+
+
+
+

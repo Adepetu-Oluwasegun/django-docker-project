@@ -78,7 +78,7 @@ docker-compose up
 docker-compose down
 ```
 
-## 🧹 Cleaning Up
+## Cleaning Up
 
 To remove containers, images, and volumes:
 
